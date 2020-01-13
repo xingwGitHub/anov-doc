@@ -2,6 +2,7 @@ module.exports = {
   title: 'Anov',
   description: '可视化平台开发手册',
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+  theme: '@vuepress/vue',
   themeConfig: {
     nav: [
       { text: '指南', link: '/guide/' },
@@ -13,7 +14,14 @@ module.exports = {
     },
     lastUpdated: true,
     editLinkText: '在 GitHub 上编辑此页'
-  }
+  },
+  plugins: [
+    ['container', {
+      type: 'vue',
+      before: '<pre class="vue-container"><code>',
+      after: '</code></pre>'
+    }]
+  ]
 }
 
 function getApiSidebar() {

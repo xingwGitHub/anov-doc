@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/wuyax/anov-doc#readme",
   "devDependencies": {
+    "@vuepress/theme-vue": "^1.2.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-container": "^2.1.2"
   },
   "dependencies": {}
 }
