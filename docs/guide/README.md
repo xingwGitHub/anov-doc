@@ -30,61 +30,15 @@ $ npm run serve
 │   ├── index.html
 │   ├── anov.png
 │   ├── favicon.ico
-│   ├── `fonts`
-│   │   ├── HYLingXinTiJ.ttf
-│   │   ├── HYQiHeiY2-35J.ttf
-│   │   ├── HYZhuZiChaoRanTiW.ttf
-│   │   ├── acens.ttf
-│   │   └── digital.ttf
-│   ├── `img`
-│   │   ├── body-bg.png
-│   │   └── loading.gif
-│   ├── `js`
-│   │   ├── CustomEase.min.js
-│   │   ├── DrawSVGPlugin.min.js
-│   │   ├── ScrambleTextPlugin.min.js
-│   │   ├── SplitText.min.js
-│   │   ├── morphsvgplugin.min.js
-│   │   ├── preload.js
-│   │   ├── preloadList.js
-│   │   └── preloadjs.min.js
-│   ├── `model`
-│   │   └── facefinder
-│   └── `sound`
-│       ├── `cheerful`
-│       │   ├── bgm.mp3
-│       │   ├── click.mp3
-│       │   ├── highLight.mp3
-│       │   ├── number.mp3
-│       │   ├── outScene.mp3
-│       │   └── words.mp3
-│       ├── `default`
-│       │   ├── bgm.mp3
-│       │   ├── click.mp3
-│       │   ├── highLight.mp3
-│       │   ├── matched.mp3
-│       │   ├── messageError.mp3
-│       │   ├── messageInfo.mp3
-│       │   ├── messageSuccess.mp3
-│       │   ├── messageSuccess1.mp3
-│       │   ├── messageSuccess2.mp3
-│       │   ├── messageWarning.mp3
-│       │   ├── noticeError.mp3
-│       │   ├── noticeSuccess.mp3
-│       │   ├── noticeWarning.mp3
-│       │   ├── number.mp3
-│       │   ├── outScene.mp3
-│       │   └── words.mp3
-│       └── `technology`
-│           ├── bgm.mp3
-│           ├── click.mp3
-│           ├── highLight.mp3
-│           ├── number.mp3
-│           ├── outScene.mp3
-│           └── words.mp3
+│   ├── `fonts` _(**字体文件**)_
+│   ├── `img` _(**静态图片资源**)_
+│   ├── `js` _(**静态JS文件**)_
+│   ├── `model` _(**模型文件**)_
+│   └── `sound` _(**音效文件**)_
 ├── `src`
 │   ├── App.vue
 │   ├── `api`
+│   │   ├── index.js
 │   │   ├── dataServe.js
 │   │   ├── `file`
 │   │   │   ├── a.json
@@ -92,7 +46,6 @@ $ npm run serve
 │   │   │   └── index.js
 │   │   ├── `graphql`
 │   │   │   └── index.js
-│   │   ├── index.js
 │   │   ├── `mock`
 │   │   │   ├── adapt.js
 │   │   │   ├── index.js
@@ -105,67 +58,15 @@ $ npm run serve
 │   │       ├── index.js
 │   │       └── ws.js
 │   ├── `assets`
-│   │   ├── `css`
-│   │   │   ├── _ant-rest.scss
-│   │   │   ├── _lib-base.scss
-│   │   │   ├── _lib-mixin.scss
-│   │   │   ├── _lib-reset.scss
-│   │   │   ├── _lib-variable.scss
-│   │   │   ├── index.scss
-│   │   │   ├── panel-mixin.scss
-│   │   │   └── panel-var.scss
-│   │   ├── `font`
-│   │   │   ├── `font-platform`
-│   │   │   │   ├── iconfont.css
-│   │   │   │   ├── iconfont.eot
-│   │   │   │   ├── iconfont.svg
-│   │   │   │   ├── iconfont.ttf
-│   │   │   │   ├── iconfont.woff
-│   │   │   │   └── iconfont.woff2
-│   │   │   ├── iconfont.css
-│   │   │   ├── iconfont.eot
-│   │   │   ├── iconfont.svg
-│   │   │   ├── iconfont.ttf
-│   │   │   ├── iconfont.woff
-│   │   │   ├── iconfont.woff2
-│   │   │   └── smart-data.css
-│   │   ├── `i18n`
+│   │   ├── `css` _(**公共css文件**)
+│   │   ├── `font` _(**字体图标文件**)_
+│   │   ├── `i18n` _(**国际化配置文件**)_
 │   │   │   ├── en-US.json
 │   │   │   └── zh-CN.json
-│   │   ├── `imgs`
-│   │   │   ├── `base`
-│   │   │   │   ├── clip-corner-bg.svg
-│   │   │   │   └── triangle-corner-bg.svg
-│   │   │   ├── `panel`
-│   │   │   │   ├── bg-fill.png
-│   │   │   │   ├── btn-bg.png
-│   │   │   │   ├── btn-def.png
-│   │   │   │   ├── btn-pre.png
-│   │   │   │   ├── close.svg
-│   │   │   │   ├── config-active.svg
-│   │   │   │   ├── config.svg
-│   │   │   │   ├── corner.svg
-│   │   │   │   ├── dev-active.svg
-│   │   │   │   ├── dev.svg
-│   │   │   │   ├── logo.png
-│   │   │   │   ├── monitoring-bg.png
-│   │   │   │   ├── network-error.svg
-│   │   │   │   ├── network-ok.svg
-│   │   │   │   └── reset.svg
-│   │   │   ├── preview.jpg
-│   │   │   └── `topTitle`
-│   │   │       ├── button-active.png
-│   │   │       ├── button-inactive.png
-│   │   │       ├── chart-title-bg.png
-│   │   │       ├── first-title-bg.png
-│   │   │       ├── logo.png
-│   │   │       ├── second-title-bg.png
-│   │   │       ├── title-bg.png
-│   │   │       ├── top-left-bg.png
-│   │   │       └── top-left-words.png
+│   │   ├── `imgs` _(**图片文件**)_
 │   │   └── `js`
 │   │       ├── `app`
-│   │       │   ├── `baseComponents`
+│   │       │   ├── `baseComponents` _(**基础组件**)_
 │   │       │   │   ├── anovApp.vue
 │   │       │   │   ├── anovPage.vue
 │   │       │   │   ├── anovPart.vue
@@ -194,7 +95,7 @@ $ npm run serve
 │   │       │   │   │   │       └── index.vue
 │   │       │   │   │   ├── `config`
 │   │       │   │   │   │   └── voiceCommand.js
-│   │       │   │   │   ├── `consolePanel`
+│   │       │   │   │   ├── `consolePanel` _(**控制面板**)_
 │   │       │   │   │   │   ├── framePanel.vue
 │   │       │   │   │   │   ├── index.vue
 │   │       │   │   │   │   ├── logPanel.vue
@@ -203,11 +104,11 @@ $ npm run serve
 │   │       │   │   │   │   ├── util.js
 │   │       │   │   │   │   ├── vuexPanel.vue
 │   │       │   │   │   │   └── vuexSetting.vue
-│   │       │   │   │   ├── `data-source`
+│   │       │   │   │   ├── `data-source` _(**数据源**)_
 │   │       │   │   │   │   └── index.vue
-│   │       │   │   │   ├── `i18n`
+│   │       │   │   │   ├── `i18n` _(**国际化**)_
 │   │       │   │   │   │   └── index.vue
-│   │       │   │   │   ├── `mappingTable`
+│   │       │   │   │   ├── `mappingTable` _(**映射表**)_
 │   │       │   │   │   │   ├── `actions`
 │   │       │   │   │   │   │   ├── index.vue
 │   │       │   │   │   │   │   └── morePanel.vue
@@ -235,7 +136,7 @@ $ npm run serve
 │   │       │   │   │   ├── `systemCheck`
 │   │       │   │   │   │   ├── check.vue
 │   │       │   │   │   │   └── index.vue
-│   │       │   │   │   ├── `theme`
+│   │       │   │   │   ├── `theme` _(**主题**)_
 │   │       │   │   │   │   ├── built-in-theme.vue
 │   │       │   │   │   │   ├── theme-add.vue
 │   │       │   │   │   │   └── index.vue
@@ -243,35 +144,15 @@ $ npm run serve
 │   │       │   │   │   ├── footer-nav.vue
 │   │       │   │   │   ├── detail-box.vue
 │   │       │   │   │   ├── base-more.vue
-│   │       │   │   │   ├── cml-collapse.vue
+│   │       │   │   │   ├── top-nav.vue
 │   │       │   │   │   ├── cml-module.vue
 │   │       │   │   │   ├── cml-module-item.vue
-│   │       │   │   │   └── top-nav.vue
-│   │       │   │   ├── index.js
+│   │       │   │   │   └── cml-collapse.vue
+│   │       │   │   ├── index.js _(**cmlpanel入口文件**)_
 │   │       │   │   ├── panel.vue
 │   │       │   │   ├── panelServer.js
 │   │       │   │   ├── `source`
-│   │       │   │   │   └── `img`
-│   │       │   │   │       ├── border.svg
-│   │       │   │   │       ├── icon-3dMap.svg
-│   │       │   │   │       ├── icon-ai.svg
-│   │       │   │   │       ├── icon-animate.svg
-│   │       │   │   │       ├── icon-cancel.svg
-│   │       │   │   │       ├── icon-carouse.svg
-│   │       │   │   │       ├── icon-city.svg
-│   │       │   │   │       ├── icon-data.svg
-│   │       │   │   │       ├── icon-dev.svg
-│   │       │   │   │       ├── icon-exit.svg
-│   │       │   │   │       ├── icon-i18n.svg
-│   │       │   │   │       ├── icon-layout.svg
-│   │       │   │   │       ├── icon-more.svg
-│   │       │   │   │       ├── icon-reset.svg
-│   │       │   │   │       ├── icon-theme.svg
-│   │       │   │   │       ├── icon-triangle.svg
-│   │       │   │   │       ├── logo-uv.png
-│   │       │   │   │       ├── network-error.svg
-│   │       │   │   │       ├── network-ok.svg
-│   │       │   │   │       └── reset.svg
+│   │       │   │   │   └── `img` _(**cmlpanel资源文件)_
 │   │       │   │   ├── `store`
 │   │       │   │   │   ├── getters.js
 │   │       │   │   │   ├── index.js
@@ -283,17 +164,13 @@ $ npm run serve
 │   │       │   │   │   ├── panel-mixin.scss
 │   │       │   │   │   └── panel-var.scss
 │   │       │   │   └── `util`
-│   │       │   │       ├── acturlHeight.js
 │   │       │   │       ├── bus.js
 │   │       │   │       ├── cmlGlobal.js
 │   │       │   │       ├── collapse-transition.js
-│   │       │   │       ├── directive.js
 │   │       │   │       ├── hotkeys.js
-│   │       │   │       ├── mitt.js
-│   │       │   │       ├── network.js
 │   │       │   │       ├── stats.js
 │   │       │   │       └── themeControl.js
-│   │       │   ├── `config`
+│   │       │   ├── `config` _(**所有服务的基础配置**)_
 │   │       │   │   ├── `action`
 │   │       │   │   │   ├── index.js
 │   │       │   │   │   ├── projectAction.js
@@ -370,7 +247,15 @@ $ npm run serve
 │   │       │   │   │   └── index.js
 │   │       │   │   └── `voiceRecognize`
 │   │       │   │       └── index.js
-│   │       │   ├── index.js
+│   │       │   ├── `utils`
+│   │       │   │   ├── SizeAdapt.js
+│   │       │   │   ├── chip.js
+│   │       │   │   ├── color.js
+│   │       │   │   ├── isType.js
+│   │       │   │   ├── log.js
+│   │       │   │   ├── tools.js
+│   │       │   │   ├── urlArg.js
+│   │       │   │   └── weather.js
 │   │       │   ├── `message`
 │   │       │   │   ├── chip-load.vue
 │   │       │   │   ├── index.js
@@ -380,17 +265,8 @@ $ npm run serve
 │   │       │   │   └── valid-period.vue
 │   │       │   ├── `plugins`
 │   │       │   │   └── index.js
-│   │       │   └── `utils`
-│   │       │       ├── SizeAdapt.js
-│   │       │       ├── chip.js
-│   │       │       ├── color.js
-│   │       │       ├── isType.js
-│   │       │       ├── log.js
-│   │       │       ├── tools.js
-│   │       │       ├── urlArg.js
-│   │       │       └── weather.js
+│   │       │   └── index.js _(**入口文件**)_
 │   │       └── `common`
-│   │           ├── chinaGeo.json
 │   │           ├── extend.js
 │   │           ├── fickler.js
 │   │           ├── formatTime.js
