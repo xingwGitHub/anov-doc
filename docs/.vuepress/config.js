@@ -64,6 +64,11 @@ function getGuideSidebar() {
       children: ['']
     },
     {
+      title: '配置项',
+      collapsable: false,
+      children: ['config']
+    },
+    {
       title: '使用路由',
       collapsable: false,
       children: ['route']
