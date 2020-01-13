@@ -7,13 +7,13 @@
 模块化方式
 ```javascript
 // 按需引入
-import { voiceFeedback } from 'anov-core'
+import { voiceFeedbackServer } from 'anov-core'
 // 完整引入
 import * as anov from 'anov-core'
 ```
 全局对象方式
 ```javascript
-app.voiceFeedback
+app.voiceFeedbackServer
 ```
 
 

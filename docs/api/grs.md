@@ -8,7 +8,7 @@
 
 ```javascript
 // 按需引入
-import { gestureRecognize } from 'anov-core'
+import { gestureRecognizeServer } from 'anov-core'
 // 完整引入
 import * as anov from 'anov-core'
 ```
@@ -16,7 +16,7 @@ import * as anov from 'anov-core'
 全局对象方式
 
 ```javascript
-app.gestureRecognize
+app.gestureRecognizeServer
 ```
 
 ## API

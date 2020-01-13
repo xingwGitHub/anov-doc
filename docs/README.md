@@ -33,6 +33,6 @@ $ npm run serve
 
 :::warning NOTE
 在本文档出现的服务都挂载在`window.app`对象上，例如： 
-你可以通过以下的方式来访问`voiceFeedback`服务   
-`app.voiceFeedback`  
+你可以通过以下的方式来访问`voiceFeedbackServer`服务   
+`app.voiceFeedbackServer`  
 :::
